@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+@media screen and (max-width:1024px){
+    .sp-only{
+        display:block;
+    }
+    .c-profile::before,.c-profile::after{
+        font-size:10px;
+        content:"🎼.•*¨*•.¸¸♬ 🧊🗝 🎶 .•*¨*•.¸¸♬ 🧊🗝 🎼.•*¨*•.¸¸♬ 🧊🗝";
+    }
+    
+    .c-illust{
+        margin:80px 0;
+        padding:60px 0;
+        text-align:center;
+        background-color:#E1F1FF;
+    }
+    #illust-swiper .swiper-wrapper{
+        height:auto;
+        align-items:center;
+    }
+    #illust-swiper .swiper-wrapper img{
+        width:100%;
+        height:auto;
+        margin-bottom:10px;
+    }
+
+    #sdillust-swiper .swiper-wrapper{
+        height:auto;
+    }
+    #sdillust-swiper .swiper-wrapper img{
+        width:100%;
+        height:auto;
+        margin-bottom:10px;
+    }
+    .c-movie-wapper{
+        text-align:center;
+    }
+   .pc-only{
+        display:none;
+    }
+
+}
