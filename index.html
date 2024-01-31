@@ -1,9 +1,27 @@
-<html lang="ja">
+<!DOCTYPE html>
+<html lang="jp">
     <head>
-        <meta charset="UTF-8" />
-        <title>uha</title>
-        <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png">
-        <style type="text/css">
+        <meta charset="Shift-jis">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>uha(仮)</title>
+        <link rel="icon" type="image/x-icon" href="media/top/shiro_def.png">
+
+        <meta property="og:title" content="検討中">
+        <meta property="og:description" content="2024年2月4日に誕生日と卒業を迎えたIRIAMライバー&quot;宇羽はぅ&quot;に贈るファンサイト">
+        <meta property="og:image" content="https://****.github.io/****/media/common/ogp.jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://****.github.io/****/">
+        <!-- リセットCSS 
+        <link rel="stylesheet" href="./css/destyle.css">
+		-->
+        <!-- 共通用CSS 
+		        <link rel="stylesheet" href="./css/common.css">
+		-->
+        <!-- 個別用CSS -->
+        <link rel="stylesheet" href="./css/****.css">        
+		<style type="text/css">
             body{
                 padding:0px;
                 margin:0px;
@@ -34,80 +52,208 @@
                 margin-top: 5%;
             }
             .top_title_box {
-                margin:  50px;                /* 周りの余白指定 */                
+                margin:  20px;                /* 周りの余白指定 */                
                 height: 200px;                /* 高さ指定 */
-                width: 200px;                 /* 幅指定 */
+                width: 150px;                 /* 幅指定 */
                 color: #c0d6f3;             /* 文字色指定 */
                 text-align:left;
             }
             .top_illsut_box {
                 background-color: #f7f6fc;
-                margin:  50px;                /* 周りの余白指定 */    
-                margin-left: 250px;            
+                margin:  20px;                /* 周りの余白指定 */           
                 height: 250px;                /* 高さ指定 */
-                width: 350px;                 /* 幅指定 */
+                width: 300px;                 /* 幅指定 */
             }
-            .message_box {
+            .top_message_box {
                 margin:  50px;                /* 周りの余白指定 */                
                 height: 200px;                /* 高さ指定 */
                 width: 200px;                 /* 幅指定 */
-                color: #c0d6f3;             /* 文字色指定 */
+                color: #F7F6FC;             /* 文字色指定 */
                 text-align:left;
             }
+
+			/* (共用)横並び */
             .float_test {
                 float: left;                /* 回り込み指定 */
             }
+
+			/* 見出しテキスト */
+			.head-text {
+				font-size:20px;
+			}
+
+		     /* ホバーのフォント色変更 */
+            .link-text {
+                color: #F7F6FC;
+                text-decoration: underline;
+            }
+            .link-text:hover {
+                color: #C0D6F3;
+            }
+
+			/* ホバーのフォント色変更 */
+            .link-text-back {
+                color: #FFFFFF;
+                text-decoration: underline;
+            }
+            .link-text-back:hover {
+                color: #C0D6F3;
+            }
+
+		     /* ホバーの画像変更 */
+            .image-container {
+                position: relative;
+                display: inline-block;
+            }
+            .image-container img {
+				margin:30px;
+				margin-top:40px;
+                width: 100px;
+                height: 100px;
+            }
+            .image-container img:hover {
+                content: url("media/top/shiro_hov.png");
+            }
+
+			/* ホバーの画像変更_背景の溶け込みテスト */
+            .image-container-back {
+                position: relative;
+                display: inline-block;
+            }
+            .image-container-back img {
+				margin:30px;
+				margin-top:40px;
+                width: 100px;
+                height: 100px;
+            }
+            .image-container-back img:hover {
+                content: url("media/top/seikaku_shinbun.jpg");
+            }
+			  
+		     /* カルーセル実装*/
+            .carousel {
+                margin-left: 250px;
+                width: 50%;
+                overflow: hidden;
+            }
+            .carousel-inner {
+                display: flex;
+                transition: transform 0.5s ease;
+            }
+            .carousel-item {
+                flex: 0 0 100%;
+            }
+
         </style>
         <div class="head_bar">
-            <input class="shirokuma" type="button"  onclick="koshin()">
-            <input class="shirokuma" type="button"  onclick="koshin()">
-            <input class="shirokuma" type="button"  onclick="koshin()">
-            <input class="shirokuma" type="button"  onclick="koshin()">
-            <input class="shirokuma" type="button"  onclick="koshin()">
-            <input class="shirokuma" type="button"  onclick="koshin()">
-            <input class="shirokuma" type="button"  onclick="koshin()">
-            <input class="shirokuma" type="button"  onclick="koshin()">
+			<div class="image-container">
+				<img src="media/top/shiro_def.png" alt="デフォルトの画像">
+				<img src="media/top/shiro_def.png" alt="デフォルトの画像">
+				<img src="media/top/shiro_def.png" alt="デフォルトの画像">
+				<img src="media/top/shiro_def.png" alt="デフォルトの画像">
+				<img src="media/top/shiro_def.png" alt="デフォルトの画像">
+				<img src="media/top/shiro_def.png" alt="デフォルトの画像">
+				<img src="media/top/shiro_def.png" alt="デフォルトの画像">
+				<img src="media/top/shiro_def.png" alt="デフォルトの画像">
+			</div>
         </div>
         <div class="margin">
             <div class="float_test top_title_box">
                 <h2>
-                    UHANE HAU<br>
-                        　　GALLERY
+                    <a href="https://www.google.co.jp/" class="link-text head_text">
+						HAU<br>
+						ALBUM</a>
                 </h2>
             </div>
-            <div class="float_test top_illsut_box">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png">
+            <div class="float_test top_illsut_box carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="media/top/dummy1.png" alt="Image 1" width="100%" height="100%">
+				  </div>
+				  <div class="carousel-item">
+					<img src="media/top/dummy2.png" alt="Image 2" width="100%" height="100%">
+				  </div>
+				  <div class="carousel-item">
+					<img src="media/top/dummy3.png" alt="Image 3" width="100%" height="100%">
+				  </div>
+				</div>
             </div>
         <div>
         <div class="margin">
-            <div class="float_test message_box">
+            <div class="float_test top_message_box">
                 <h3>ILLUSTRATION</h3>
                 <p>
-                    　　歴代衣装<br>
-                    　　一枚絵たち<br>
-                    　　SDたち
+                    　　<a href="https://www.google.co.jp/" class="link-text">歴代衣装</a><br>
+                    　　<a href="https://www.google.co.jp/" class="link-text">一枚絵たち</a><br>
+                    　　<a href="https://www.google.co.jp/" class="link-text">SDたち</a>
                 </p>
             </div>
-            <div class="float_test message_box">
+            <div class="float_test top_message_box">
                 <h3>TAGS</h3>
                 <p>
-                    　　#うはね画<br>
-                    　　#ご飯の時間だ宇羽
+                    　　<a href="https://www.google.co.jp/" class="link-text">#うはね画</a><br>
+                    　　<a href="https://www.google.co.jp/" class="link-text">#ご飯の時間だ宇羽</a>
                 </p>
             </div>
-            <div class="float_test message_box">
+            <div class="float_test top_message_box">
                 <h3>MESSAGES</h3>
                 <p>
-                    　　Happy Birthday Song<br>
-                    　　Special Movies<br>
-                    　　From Listeners...
+                    　　<a href="https://www.google.co.jp/" class="link-text">Happy Birthday Song</a><br>
+                    　　<a href="https://www.google.co.jp/" class="link-text">Special Movies</a><br>
+                    　　<a href="https://www.google.co.jp/" class="link-text">From Listeners...</a>
                 </p>
             </div>
+			<div>
+				<div class="image-container-back">
+					<img src="media/top/dummy_white.png" alt="デフォルトの画像">
+				</div>
+				<div class="float_test top_message_box">
+				    <a href="https://www.google.co.jp/" class="link-text">うるさいよねぇ！？</a>
+				</div>
+			</div>
+
+
         </div>
+
+		<!--
+		< フォントテスト >
+		<div style="margin:50px">
+			<h1>Mochiy Pop One</h1>
+			<div>Kaisei Decol</div>
+			<div style="font-weight:bold">Kaisei Decol font-weight:bold</div>
+			<span style="font-family:DotGothic16">DotGothic16</span>
+		</div>
+        <input class="shirokuma" type="button"  onclick="koshin()">
+		-->
+
         <script>
             function koshin(){
                 location.reload();
             } 
+
+			// カルーセル用Script
+            const carousel = document.querySelector('.carousel');
+            const carouselInner = document.querySelector('.carousel-inner');
+            const carouselItems = document.querySelectorAll('.carousel-item');
+            const carouselWidth = carousel.clientWidth;
+
+            let currentIndex = 0;
+
+            function updateCarouselPosition() {
+                carouselInner.style.transform = `translateX(-${currentIndex * carouselWidth}px)`;
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % carouselItems.length;
+                updateCarouselPosition();
+            }
+
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+                updateCarouselPosition();
+            }
+
+            setInterval(nextSlide, 7000); // 自動スライド
         </script>
     </body>
 </html>

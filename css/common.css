@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* フォントのインポート */
+@font-face{ 
+    font-family: "Mochiy Pop One"; 
+    src: url('../font/MochiyPopOne-Regular.ttf') format("truetype");
+}
+@font-face{ 
+    font-family: "Kaisei Decol"; 
+    src: url('../font/KaiseiDecol-Regular.ttf') format("truetype"),
+        url('../font/KaiseiDecol-Bold.ttf') format("truetype");
+
+}
+@font-face{ 
+    font-family: "DotGothic16"; 
+    src: url('../font/DotGothic16-Regular.ttf') format("truetype");
+}
+
+/* 通常フォント：Kaisei Decol */
+body{
+    font-family: 'Kaisei Decol', serif;
+}
+
+/* 見出しフォント：Mochiy Pop One */
+h1{
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+
+img{
+    /* PC保存対策 */
+    pointer-events: none;
+    /* SP保存対策 */
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-touch-callout:none;
+    -moz-user-select:none;
+    user-select:none;
+}
