@@ -1,0 +1,124 @@
+@charset "utf-8";
+html{
+    user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+    scroll-behavior: smooth;
+}
+body{
+    text-align:center;
+    align-items: center;
+}
+
+            .head_bar {
+                width: 100%;
+                height: 150px;
+                background-color: #f7f6fc;
+                text-align: center;
+            }
+            .shirokuma {
+                background-color: #c0d6f3;  /* 背景色指定 */
+                display: inline-block;
+                margin:  50px;                /* 周りの余白指定 */    
+                padding: 10px 20px;
+                border-radius: 50%;
+                border: none;
+            }
+            .margin {
+                width: 1000px;
+                margin:auto;             
+                margin-top: 5%;
+            }
+            .top_title_box {
+                margin:  20px;                /* 周りの余白指定 */                
+                height: 200px;                /* 高さ指定 */
+                width: 150px;                 /* 幅指定 */
+                color: #c0d6f3;             /* 文字色指定 */
+                text-align:left;
+            }
+            .top_illsut_box {
+                background-color: #f7f6fc;
+                margin:  20px;                /* 周りの余白指定 */           
+                height: 250px;                /* 高さ指定 */
+                width: 300px;                 /* 幅指定 */
+            }
+            .top_message_box {
+                margin:  50px;                /* 周りの余白指定 */                
+                height: 200px;                /* 高さ指定 */
+                width: 200px;                 /* 幅指定 */
+                color: #F7F6FC;             /* 文字色指定 */
+                text-align:left;
+            }
+
+			/* (共用)横並び */
+            .float_test {
+                float: left;                /* 回り込み指定 */
+            }
+
+			/* 見出しテキスト */
+			.head-text {
+				font-size:20px;
+			}
+
+		     /* ホバーのフォント色変更 */
+            .link-text {
+                color: #F7F6FC;
+                text-decoration: underline;
+            }
+            .link-text:hover {
+                color: #C0D6F3;
+            }
+
+			/* ホバーのフォント色変更 */
+            .link-text-back {
+                color: #FFFFFF;
+                text-decoration: underline;
+            }
+            .link-text-back:hover {
+                color: #C0D6F3;
+            }
+
+		     /* ホバーの画像変更 */
+            .image-container {
+                position: relative;
+                display: inline-block;
+            }
+            .image-container img {
+				margin:30px;
+				margin-top:40px;
+                width: 100px;
+                height: 100px;
+            }
+            .image-container img:hover {
+                content: url("media/top/shiro_hov.png");
+            }
+
+			/* ホバーの画像変更_背景の溶け込みテスト */
+            .image-container-back {
+                position: relative;
+                display: inline-block;
+            }
+            .image-container-back img {
+				margin:30px;
+				margin-top:40px;
+                width: 100px;
+                height: 100px;
+            }
+            .image-container-back img:hover {
+                content: url("media/top/seikaku_shinbun.jpg");
+            }
+			  
+		     /* カルーセル実装*/
+            .carousel {
+                margin-left: 250px;
+                width: 50%;
+                overflow: hidden;
+            }
+            .carousel-inner {
+                display: flex;
+                transition: transform 0.5s ease;
+            }
+            .carousel-item {
+                flex: 0 0 100%;
+            }
