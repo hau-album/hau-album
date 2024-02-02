@@ -10,115 +10,102 @@ body{
     text-align:center;
     align-items: center;
 }
+h1{
+    font-size:70px;
+}
+h2{
+    font-size: 25px;
+    text-shadow:4px 4px 4px rgba(65,74,161,0.4);
+}
 
-            .head_bar {
-                width: 100%;
-                height: 150px;
-                background-color: #f7f6fc;
-                text-align: center;
-            }
-            .shirokuma {
-                background-color: #c0d6f3;  /* ”wŒiFw’è */
-                display: inline-block;
-                margin:  50px;                /* ü‚è‚Ì—]”’w’è */    
-                padding: 10px 20px;
-                border-radius: 50%;
-                border: none;
-            }
-            .margin {
-                width: 1000px;
-                margin:auto;             
-                margin-top: 5%;
-            }
-            .top_title_box {
-                margin:  20px;                /* ü‚è‚Ì—]”’w’è */                
-                height: 200px;                /* ‚‚³w’è */
-                width: 150px;                 /* •w’è */
-                color: #c0d6f3;             /* •¶šFw’è */
-                text-align:left;
-            }
-            .top_illsut_box {
-                background-color: #f7f6fc;
-                margin:  20px;                /* ü‚è‚Ì—]”’w’è */           
-                height: 250px;                /* ‚‚³w’è */
-                width: 300px;                 /* •w’è */
-            }
-            .top_message_box {
-                margin:  50px;                /* ü‚è‚Ì—]”’w’è */                
-                height: 200px;                /* ‚‚³w’è */
-                width: 200px;                 /* •w’è */
-                color: #F7F6FC;             /* •¶šFw’è */
-                text-align:left;
-            }
+.pc_center{
+    width:100%;
+    padding:40px;
+    margin:  0 auto;            /* ä¸­å¤®å¯„ã› */
+}
 
-			/* (‹¤—p)‰¡•À‚Ñ */
-            .float_test {
-                float: left;                /* ‰ñ‚è‚İw’è */
-            }
+.head_bar {
+    width: 100%;
+    height: 150px;
+    background-color: #f7f6fc;
+    text-align: center;
+}
 
-			/* Œ©o‚µƒeƒLƒXƒg */
-			.head-text {
-				font-size:20px;
-			}
+/* æ¨ªä¸¦ã³ */
+.menu_box {
+    float: left;    /* å›ã‚Šè¾¼ã¿æŒ‡å®š */
+}
+.message_box {
+    margin:  50px;    /* å‘¨ã‚Šã®ä½™ç™½æŒ‡å®š */    
+    height: 200px;    /* é«˜ã•æŒ‡å®š */
+    width: 200px;     /* å¹…æŒ‡å®š */
+    text-align:left;
+}
+.carousel_box {
+    background-color: #f7f6fc; 
+    height: 250px;    /* é«˜ã•æŒ‡å®š */
+    width: 300px;     /* å¹…æŒ‡å®š */
+}
 
-		     /* ƒzƒo[‚ÌƒtƒHƒ“ƒgF•ÏX */
-            .link-text {
-                color: #F7F6FC;
-                text-decoration: underline;
-            }
-            .link-text:hover {
-                color: #C0D6F3;
-            }
+/* ãƒ›ãƒãƒ¼ã®ãƒ•ã‚©ãƒ³ãƒˆè‰²å¤‰æ›´ */
+.link-text {
+    color:#646F8B;
+    text-decoration: none;
+    margin-left: 25px;
+}
+.link-text:hover {
+    color: #C0D6F3;
+}
 
-			/* ƒzƒo[‚ÌƒtƒHƒ“ƒgF•ÏX */
-            .link-text-back {
-                color: #FFFFFF;
-                text-decoration: underline;
-            }
-            .link-text-back:hover {
-                color: #C0D6F3;
-            }
-
-		     /* ƒzƒo[‚Ì‰æ‘œ•ÏX */
-            .image-container {
-                position: relative;
-                display: inline-block;
-            }
-            .image-container img {
-				margin:30px;
-				margin-top:40px;
-                width: 100px;
-                height: 100px;
-            }
-            .image-container img:hover {
-                content: url("media/top/shiro_hov.png");
-            }
-
-			/* ƒzƒo[‚Ì‰æ‘œ•ÏX_”wŒi‚Ì—n‚¯‚İƒeƒXƒg */
-            .image-container-back {
-                position: relative;
-                display: inline-block;
-            }
-            .image-container-back img {
-				margin:30px;
-				margin-top:40px;
-                width: 100px;
-                height: 100px;
-            }
-            .image-container-back img:hover {
-                content: url("media/top/seikaku_shinbun.jpg");
-            }
+/* ãƒ›ãƒãƒ¼ã®ç”»åƒå¤‰æ›´ */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-container img {
+    margin:30px;
+    margin-top:40px;
+    width: 100px;
+    height: 100px;
+}
+.image-container img:hover {
+    content: url("/media/top/shiro_hov.png");
+}
 			  
-		     /* ƒJƒ‹[ƒZƒ‹À‘•*/
-            .carousel {
-                margin-left: 250px;
-                width: 50%;
-                overflow: hidden;
-            }
-            .carousel-inner {
-                display: flex;
-                transition: transform 0.5s ease;
-            }
-            .carousel-item {
-                flex: 0 0 100%;
-            }
+/* ã‚«ãƒ«ãƒ¼ã‚»ãƒ«å®Ÿè£…*/
+.carousel {
+    margin-left: 250px;
+    width: 50%;
+    overflow: hidden;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-item {
+    flex: 0 0 100%;
+}
+
+/* éš ã—ãƒ›ãƒãƒ¼ã®ãƒ•ã‚©ãƒ³ãƒˆè‰²å¤‰æ›´ */
+.link-text-back {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.link-text-back:hover {
+    color: #C0D6F3;
+}
+
+/* éš ã—_ãƒ›ãƒãƒ¼ã®ç”»åƒå¤‰æ›´ */
+.image-container-back {
+    position: relative;
+    display: inline-block;
+}
+.image-container-back img {
+	margin:30px;
+	margin-top:40px;
+    width: 100px;
+    height: 100px;
+}
+.image-container-back img:hover {
+    content: url("/media/top/seikaku_shinbun.jpg");
+}
