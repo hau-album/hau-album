@@ -4,6 +4,9 @@
     .sp-only{
         display:block;
     }
+    .c-top{
+        padding:0;
+    }
     .c-top-lft-tips{
         font-size:10px;
     }    
