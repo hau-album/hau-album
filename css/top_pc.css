@@ -37,17 +37,27 @@ p{
     width:100%;
     padding:40px;
     display: flex;    /* 回り込み指定 */
-    justify-content:center;
+    justify-content:space-around;
 }
 
 .head_text{
-    margin-left: 70px;
 }
 .message_box {
-    margin:  50px;    /* 周りの余白指定 */    
-    height: 200px;    /* 高さ指定 */
-    width: 350px;     /* 幅指定 */
+    margin:0 auto;
+    align-items: center;
+}
+.message_box h1{
+    font-size:96px;
     text-align:left;
+    line-height:1.2;
+}
+.message_box_item{
+    padding:0 30px;
+    display:inline-block;
+    text-align:left;
+}
+.message_box_item h2{
+    display:inline-block;
 }
 .carousel_box {
     background-color: #ffffff; 
@@ -58,8 +68,8 @@ p{
 .link-text {
     color:#646F8B;
     text-decoration: none;
-    margin-top: 20px;
-    margin-left: 35px;
+    display:block;
+    padding:10px 0 0 20px;
 }
 .link-text:hover {
     color: #C0D6F3;
@@ -91,6 +101,26 @@ p{
 }
 .carousel-item {
     flex: 0 0 100%;
+    position:relative;
+}
+.carousel-item img{
+    width:100%;
+    height:100%;
+}
+.sel-creator-name{
+    font-size:16px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    text-shadow: 3px 0 2px #FFF,-3px 0 2px #FFF,0 3px 2px #FFF,0 -3px 2px #FFF,3px 3px 2px #FFF,3px -3px 2px #FFF,-3px -3px 2px #FFF,-3px 3px 2px #FFF;
+    position: absolute;
+    display:inline-block;
+    box-sizing: border-box;
+    bottom:10px;
+    right:20px;
+}
+.top-btn{
+    display:inline-block;
+    font-size:24px;
+    padding:30px 0;
 }
 
 /* -----------------追加開発----------------- */
