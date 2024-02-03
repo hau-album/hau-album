@@ -61,6 +61,15 @@ body{
     right:20px;
 
 }
+.search-result{
+    font-size:20px;
+    text-align:right;
+}
+.search-result a{
+    display:inline-block;
+    padding:0 10px;
+    border-bottom:1px solid;
+}
 .top-btn{
     display:inline-block;
     font-size:24px;
@@ -81,6 +90,9 @@ body{
     }
     .fa-creator-name{
         font-size:8px;
+    }
+    .search-result{
+        font-size:16px;
     }
 }
 
