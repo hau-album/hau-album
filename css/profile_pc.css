@@ -25,6 +25,11 @@ body{
 .c-top-lft{
     width:400px;
 }
+.c-top-lft-tips{
+    padding:20px 0;
+    font-size:12px;
+    opacity: 0.5;
+}
 .c-top-cnt{
     width:400px;
     margin:0 80px;

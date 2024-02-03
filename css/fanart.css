@@ -19,6 +19,11 @@ body{
     font-size:32px;
     background-color:#E1F1FF;
 }
+.fa-tips{
+    padding:20px 0;
+    font-size:16px;
+    opacity: 0.5;
+}
 .fa-grid{
     margin:40px 0;
     width:100%;
@@ -44,8 +49,6 @@ body{
     height:100%;
     object-fit: cover;
 }
-.fa-1-1{
-}
 
 .fa-creator-name{
     font-size:16px;
@@ -69,6 +72,9 @@ body{
     }
     .fa-category{
         font-size:24px;
+    }
+    .fa-tips{
+        font-size:12px;
     }    
     .fa-grid{
         grid-template-columns: repeat(2, 1fr);

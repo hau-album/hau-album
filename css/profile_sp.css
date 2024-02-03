@@ -4,6 +4,9 @@
     .sp-only{
         display:block;
     }
+    .c-top-lft-tips{
+        font-size:10px;
+    }    
     .c-profile::before,.c-profile::after{
         font-size:10px;
         content:"🎼.•*¨*•.¸¸♬ 🧊🗝 🎶 .•*¨*•.¸¸♬ 🧊🗝 🎼.•*¨*•.¸¸♬ 🧊🗝";
