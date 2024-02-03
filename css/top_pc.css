@@ -10,18 +10,15 @@ body{
     text-align:center;
     align-items: center;
 }
+.pc-only{
+    display:block;
+}
 h1{
     font-size:70px;
 }
 h2{
     font-size: 25px;
     text-shadow:4px 4px 4px rgba(65,74,161,0.4);
-}
-
-.pc_center{
-    width:100%;
-    padding:40px;
-    margin:  0 auto;            /* 中央寄せ */
 }
 
 .head_bar {
@@ -33,10 +30,15 @@ h2{
 
 /* 横並び */
 .menu_box {
-    float: left;    /* 回り込み指定 */
+    width:100%;
+    padding:40px;
+    display: flex;    /* 回り込み指定 */
+    margin-top: 100px;
+    justify-content:center;
 }
+
 .message_box {
-    margin:  50px;    /* 周りの余白指定 */    
+    margin:  70px;    /* 周りの余白指定 */    
     height: 200px;    /* 高さ指定 */
     width: 200px;     /* 幅指定 */
     text-align:left;
@@ -44,7 +46,7 @@ h2{
 .carousel_box {
     background-color: #f7f6fc; 
     height: 250px;    /* 高さ指定 */
-    width: 300px;     /* 幅指定 */
+    width: 200px;     /* 幅指定 */
 }
 
 /* ホバーのフォント色変更 */
@@ -86,6 +88,8 @@ h2{
     flex: 0 0 100%;
 }
 
+/* -----------------追加開発----------------- */
+
 /* 隠しホバーのフォント色変更 */
 .link-text-back {
     color: #FFFFFF;
@@ -108,4 +112,8 @@ h2{
 }
 .image-container-back img:hover {
     content: url("/media/top/seikaku_shinbun.jpg");
+}
+
+.sp-only{
+    display:none;
 }
