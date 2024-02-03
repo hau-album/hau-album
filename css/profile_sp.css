@@ -21,6 +21,10 @@
         text-align:center;
         background-color:#E1F1FF;
     }
+    #illust-swiper{
+        max-width:100%;
+        min-width:100%;
+    }
     #illust-swiper .swiper-wrapper{
         height:auto;
         align-items:center;
