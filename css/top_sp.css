@@ -6,8 +6,8 @@
         display:block;
     }
     .head_bar {
-        height: 100%;
-        width: 150px;
+        height: 150px;
+        width: 100%;
         background-color: #f7f6fc;
         text-align: center;
     }
@@ -29,6 +29,10 @@
     p{
         text-align: center;
     }
+    .h2_adjsut{
+        font-size: 50px;
+    }
+
     /* ホバーのフォント色変更 */
     .link-text {
         color:#646F8B;

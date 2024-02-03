@@ -15,7 +15,6 @@ body{
 }
 h1{
     font-size:70px;
-    margin-left: 50px;
 }
 h2{
     font-size: 35px;
@@ -24,6 +23,7 @@ h2{
 p{
     margin-top: 20px;
 }
+
 
 .head_bar {
     width: 100%;
@@ -40,17 +40,18 @@ p{
     justify-content:center;
 }
 
+.head_text{
+    margin-left: 70px;
+}
 .message_box {
-    margin:  70px;    /* 周りの余白指定 */    
+    margin:  50px;    /* 周りの余白指定 */    
     height: 200px;    /* 高さ指定 */
     width: 350px;     /* 幅指定 */
     text-align:left;
 }
 .carousel_box {
-    background-color: #f7f6fc; 
-    margin-left: 250px;
-    height: 250px;    /* 高さ指定 */
-    width: 200px;     /* 幅指定 */
+    background-color: #ffffff; 
+    margin-left: 200px;
 }
 
 /* ホバーのフォント色変更 */
