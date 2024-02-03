@@ -3,6 +3,7 @@ const costume = new Swiper('#costume-swiper', {
   autoplay:{
     delay:5000,
     disableOnInteraction: false,
+    pauseOnMouseEnter: true,
   },
   navigation: {
     nextEl: '.swiper-button-next',
@@ -16,6 +17,7 @@ const illust = new Swiper('#illust-swiper', {
   autoplay:{
     delay:5000,
     disableOnInteraction: false,
+    pauseOnMouseEnter: true,
   },
   navigation: {
     nextEl: '.swiper-button-next',
@@ -34,6 +36,7 @@ const sdillust = new Swiper('#sdillust-swiper', {
   autoplay:{
     delay:5000,
     disableOnInteraction: false,
+    pauseOnMouseEnter: true,
   },
   navigation: {
     nextEl: '.swiper-button-next',
