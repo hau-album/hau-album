@@ -5,14 +5,6 @@
     .sp-only{
         display:block;
     }
-    h1{
-        font-size:70px;
-    }
-    h2{
-        font-size: 25px;
-        text-shadow:4px 4px 4px rgba(65,74,161,0.4);
-    }
-
     .head_bar {
         height: 100%;
         width: 150px;
@@ -20,31 +12,28 @@
         text-align: center;
     }
 
-    /* 横並び */
-    .menu_box {
-        width:100%;
-        padding:40px;
-        margin-top: 100px;
-        justify-content:center;
-    }
-
     .message_box {
-        margin:  70px;    /* 周りの余白指定 */    
+        margin:  40px;    /* 周りの余白指定 */    
         height: 200px;    /* 高さ指定 */
-        width: 200px;     /* 幅指定 */
-        text-align:left;
-    }
-    .carousel_box {
-        background-color: #f7f6fc; 
-        height: 250px;    /* 高さ指定 */
-        width: 200px;     /* 幅指定 */
+        width: 100%;     /* 幅指定 */
+        text-align: center;
     }
 
+    h1{
+        font-size:50px;
+    }
+    h2{
+        font-size: 25px;
+        text-shadow:4px 4px 4px rgba(65,74,161,0.4);
+    }
+    p{
+        text-align: center;
+    }
     /* ホバーのフォント色変更 */
     .link-text {
         color:#646F8B;
         text-decoration: none;
-        margin-left: 25px;
+        margin-left: 35px;
     }
     .link-text:hover {
         color: #C0D6F3;
@@ -62,13 +51,12 @@
         height: 100px;
     }
     .image-container img:hover {
-        content: url("/media/top/shiro_hov.png");
+        content: url("./media/top/shiro_hov.png");
     }
                 
     /* カルーセル実装*/
     .carousel {
-        margin-left: 250px;
-        width: 50%;
+        width: 100%;
         overflow: hidden;
     }
     .carousel-inner {
