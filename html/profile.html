@@ -195,5 +195,10 @@
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script type="text/javascript" src="../js/profile-swiper.js"></script>
+        <script>
+            document.addEventListener('keydown', e => {
+                if (e.keyCode == 123) e.preventDefault(); // 123:F12キーのコード、e.keyでF12を指定もあり
+            });
+        </script>
     </body>
 </html>

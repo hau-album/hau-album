@@ -70,6 +70,10 @@
             </div>
         </div>
         <div class="top-btn"><a href="#top">TOP</a></div>
-
+        <script>
+            document.addEventListener('keydown', e => {
+                if (e.keyCode == 123) e.preventDefault(); // 123:F12キーのコード、e.keyでF12を指定もあり
+            });
+        </script>
     </body>
 </html>
