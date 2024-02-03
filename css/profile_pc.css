@@ -53,6 +53,7 @@ body{
     height:100%;
     margin-bottom:10px;
 }
+
 .swiper-slide p{
     display:inline-block;
 }
@@ -65,8 +66,9 @@ body{
 #costume-swiper .swiper-wrapper{
 }
 #illust-swiper{
-    width:35%;
-    height:auto;
+    max-width:50%;
+    min-width:35%;
+    height:100%;
 }
 #sdillust-swiper{
     width:80%;
