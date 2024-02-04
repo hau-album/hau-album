@@ -155,12 +155,17 @@ p{
     font-size:24px;
     padding:30px 0;
 }
-
 .credit-info{
+    display:flex;
+    justify-content: flex-end;
+}
+.credit-info p{
     color:#646F8B;
-    font-size: 5px;
-    text-align: right;
-    margin-right: 30px;
+    opacity: 0.8;
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.5;
+    margin:20px 0;
 }
 
 /* -----------------追加開発----------------- */
