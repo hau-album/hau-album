@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>はぅあるばむ | MOVIE</title>
+        <title>はぅあるばむ | MESSAGE</title>
         <link rel="icon" href="../media/common/favicon.png" type="image/png" sizes="180x180">
         <link rel="apple-touch-icon" href="../media/common/favicon.png" sizes="180x180">
         <!-- OGP設定 -->
-        <meta property="og:title" content="はぅあるばむ | MOVIE">
+        <meta property="og:title" content="はぅあるばむ | MESSAGE">
         <meta property="og:description" content="2024年2月4日に誕生日と卒業を迎えたIRIAMライバー&quot;宇羽はぅ&quot;に贈るファンサイト">
         <meta property="og:image" content="https://hau-album.github.io/hau-album/media/common/ogp.jpg">
         <meta property="og:image:width" content="1200">
@@ -19,25 +19,35 @@
         <!-- 共通用CSS -->
         <link rel="stylesheet" href="../css/common.css">
         <!-- 個別用CSS -->
-        <link rel="stylesheet" href="../css/movie.css">
+        <link rel="stylesheet" href="../css/message.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf_viewer.min.css" integrity="sha512-v7RQDI7qsfFNaXRzzylpsVV7ncQBdyozLze5YNgox/0z4Mc3Ellt2dBd0CbmufeD7IIh5TCJQ8ORAF/KvzVITg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
     </head>
-    <body id="top">
+    <body id="top" onCopy="return false;" oncontextmenu="return false;">
         <header class="header-container">
             <div class="header-menu">
                 <div class="page-list"><a href="https://hau-album.github.io/hau-album/"><h1>TOP</h1></a></div>
                 <div class="page-list"><a href="https://hau-album.github.io/hau-album/html/profile"><h1>PROFILE</h1></a></div>
                 <div class="page-list"><a href="https://hau-album.github.io/hau-album/html/fanart"><h1>FANART</h1></a></div>
-                <div class="page-list page-this"><a href="https://hau-album.github.io/hau-album/html/movie"><h1>MOVIE</h1></a></div>
-                <div class="page-list"><a href="https://hau-album.github.io/hau-album/html/message"><h1>MESSAGE</h1></a></div>
+                <!-- <div class="page-list"><a href="https://hau-album.github.io/hau-album/html/movie"><h1>MOVIE</h1></a></div> -->
+                <div class="page-list page-this"><a href="https://hau-album.github.io/hau-album/html/message"><h1>MESSAGE</h1></a></div>
             </div>
         </header>
-        <p class="movie-category">MOVIE</p>
+        <p class="category-title">MESSAGE</p>
         <div class="container">
-            <!-- <p class="movie-title">配信切り抜き</p> -->
-            <div class="movie-contents">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9dP_S5V2lSQ?si=jCt0YLe1FjZrZpnh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="contents">
+                <p class="contents-title">2023.11.11　活動一周年記念 寄せ書き</p>
+                <div class="contents-pdf">
+                    <iframe src="https://drive.google.com/file/d/1NdcI3BaUMBokfOqRbL4_ZImPvCsLVLNP/preview" width="100%" height="100%" allow="fullscreen"></iframe>
+                </div>
             </div>
+            <!-- <div class="contents">
+                <p class="contents-title">2024.02.04　誕生日記念&amp;これまでありがとう</p>
+                <div class="contents-pdf">
+                    <iframe src="" width="900px" height="900px" allow="fullscreen"></iframe>
+                </div>
+            </div> -->
         </div>
         <div class="top-btn"><a href="#top"><p><i class="fa-solid fa-arrow-up"></i></p></a></div>
     </body>
