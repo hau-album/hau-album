@@ -8,12 +8,12 @@ body{
     height:auto;
     margin:5% auto;
 }
-.song-title{
+.movie-category{
     padding:40px 0;
     font-size:32px;
     background-color:#E1F1FF;
 }
-.song-contents{
+.movie-contents{
     width:100%;
     aspect-ratio: 16/9;
 }

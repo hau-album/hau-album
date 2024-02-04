@@ -1,0 +1,51 @@
+@charset "utf-8";
+body{
+    text-align:center;
+    align-items: center;
+}
+.container{
+    width:80%;
+    height:auto;
+    margin:0 auto;
+    padding:0 20px;
+}
+.category-title{
+    padding:40px 0;
+    font-size:32px;
+    background-color:#E1F1FF;
+}
+.contents{
+    padding:5% 0;
+}
+.contents-title{
+    font-size:36px;
+    margin:30px 0;
+}
+.contents-pdf{
+    width:900px;
+    height:900px;
+    margin:0 auto;
+}
+.top-btn{
+    display:inline-block;
+    font-size:24px;
+    padding:30px 0;
+}
+@media screen and (max-width:1024px) {
+    .container{
+        width:100%;
+        padding:0;
+    }
+    .category-title{
+        font-size:24px;
+    }
+    .contents-title{
+        font-size:18px;
+        margin:30px 0;
+    }    
+    .contents-pdf{
+        width:350px;
+        height:350px;
+    }
+}
+
