@@ -11,10 +11,10 @@ body{
     align-items: center;
 }
 .pc-only{
-    display:block;
+    display:initial;
 }
 h1{
-    font-size:96px;
+    font-size:168px;
     text-align:left;
     line-height:1.2;
 }
@@ -37,11 +37,19 @@ p{
 /* 横並び */
 .top-sel_box {
     width:100%;
-    padding:40px;
+    height:100%;
     display: flex;    /* 回り込み指定 */
-    justify-content:space-around;
-    align-items: center;
+    justify-content:space-between;
+    text-align:left;
 }
+.top-sel-illust{
+    width:50%;
+}
+.top-sel-illust img{
+    width:100%;
+    height:100%;
+}
+
 .menu_box {
     width:100%;
     padding:40px;
@@ -64,8 +72,24 @@ p{
     display:inline-block;
 }
 
-.carousel_box {
-    background-color: #ffffff; 
+.carousel_box{
+    display:flex;
+    flex-flow: column;
+    text-align:initial;
+    align-items: initial;
+    justify-content: space-between;
+}
+.site-title{
+    text-align:center;
+}
+.site-title h1{
+    display:inline-block;
+    padding:20% 0;
+}
+.site-title img{
+    display:inline-block;
+    padding:20% 0;
+    width:50%;
 }
 
 /* ホバーのフォント色変更 */
@@ -85,16 +109,17 @@ p{
     position: relative;
     display: flex;
     justify-content: space-around;
-    padding:20px;
 }
 .image-item{
     display:inline-block;
-    width:8%;
+    width: calc(100% / 8);
+    position:relative;
 }
 .image-container img {
     display:inline-block;
     width:100%;
     height:100%;
+    max-width:50%;
     margin:0;
 }
 .image-container img:hover {
