@@ -3,7 +3,7 @@
 @media screen and (max-width:1024px){
 
     .sp-only{
-        display:block;
+        display:initial;
     }
     .head_bar {
         width: 100%;
@@ -13,10 +13,13 @@
     .top-sel_box {
         padding:0;
         display: block;
+    }
+    .top-sel-illust{
+        width:100%;
     }    
     .menu_box{
         display:block;
-        padding:10px 0;
+        padding:20px 0;
     }
     .message_box {
         text-align:right;
@@ -26,7 +29,7 @@
         width:55%;
     }
     .message_box_item p{
-        margin:10px 0;
+        margin:10px 0 20px;
         text-align: right;
     }
 
@@ -44,7 +47,9 @@
     .h2_adjsut{
         font-size: 50px;
     }
-
+    .site-title img{
+        padding:18% 0;
+    }    
     /* ホバーのフォント色変更 */
     .link-text {
         color:#646F8B;
