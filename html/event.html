@@ -21,6 +21,7 @@
         <!-- 個別用CSS -->
         <link rel="stylesheet" href="../css/event.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     </head>
     <body id="top">
         <header class="header-container">
@@ -34,18 +35,130 @@
         </header>
         <p class="category-title">イベント履歴</p>
         <div class="container">
-            <button type="button" onClick="history.back()">&lt;戻る</button>
-            <p class="contents-title title-debut">初配信</p>
-            <div class="contents-wrapper" id="debut">
-                <img src="../media/ev/a01.jpg">
-                <img src="../media/ev/a02.jpg">
-                <img src="../media/ev/a03.jpg">
-                <img src="../media/ev/a04.jpg">
-                <img src="../media/ev/a05.jpg">
-                <img src="../media/ev/a06.jpg">
-                <img src="../media/ev/a07.jpg">
+            <button class="back-btn" type="button" onClick="history.back()">&lt;戻る</button>
+            <button class="contents-title" id="title-debut">初配信<br>2022/11/11</button>
+            <div class="contents-wrapper debut" style="display:none">
+                <div></div>
+                <div></div>
+                <div><img src="../media/ev/debut00.jpg"><p>プレ配信</p></div>
+                <div><img src="../media/ev/debut01.jpg"><p>初配信</p></div>
+                <div></div>
+                <div></div>
+            </div>
+            <button class="contents-title" id="title-banner">もぐもぐお茶碗(第1位)<br>2022/11/15～11/21</button>
+            <div class="contents-wrapper" style="display:none">
+                <div class="winning-img"><img src="../media/ev/x01.jpg"></div>
+            </div>
+            <button class="contents-title" id="title-banner">トップバナーチャレンジ(第4位)<br>2022/12/13～12/19</button>
+            <div class="contents-wrapper" style="display:none">
+                <div><img src="../media/ev/a01.jpg"><p>1日目</p></div>
+                <div><img src="../media/ev/a02.jpg"><p>2日目</p></div>
+                <div><img src="../media/ev/a03.jpg"><p>3日目</p></div>
+                <div><img src="../media/ev/a04.jpg"><p>4日目</p></div>
+                <div><img src="../media/ev/a05.jpg"><p>5日目</p></div>
+                <div><img src="../media/ev/a06.jpg"><p>6日目</p></div>
+                <div><img src="../media/ev/a07.jpg"><p>ラストラン</p></div>
+                <div class="winning-img"><img src="../media/ev/a00.jpg"></div>
+            </div>
+            <button class="contents-title" id="title-animate">アニメイト店舗広告イベント(第1位)<br>2023/1/31～2/6</button>
+            <div class="contents-wrapper" style="display:none">
+                <div><img src="../media/ev/b01.jpg"><p>1日目</p></div>
+                <div><img src="../media/ev/b02.jpg"><p>2日目</p></div>
+                <div><img src="../media/ev/b03.jpg"><p>3日目</p></div>
+                <div><img src="../media/ev/b04.jpg"><p>4日目</p></div>
+                <div><img src="../media/ev/b05.jpg"><p>5日目</p></div>
+                <div><img src="../media/ev/b06.jpg"><p>6日目</p></div>
+                <div><img src="../media/ev/b07.jpg"><p>ラストラン</p></div>
+                <div class="winning-img"><img src="../media/ev/b00.jpg"></div>
+            </div>
+            <button class="contents-title" id="title-banner">SPECIAL SESSION(第1位)<br>2023/2/28～3/6</button>
+            <div class="contents-wrapper" style="display:none">
+                <div class="winning-img"><img src="../media/ev/x02.jpg"></div>
+            </div>
+            <button class="contents-title" id="title-illustgift">オリジナルイラストギフト(第2位)<br>2023/3/21～3/27</button>
+            <div class="contents-wrapper" style="display:none">
+                <div><img src="../media/ev/c01.jpg"><p>1日目</p></div>
+                <div><img src="../media/ev/c02.jpg"><p>2日目</p></div>
+                <div><img src="../media/ev/c03.jpg"><p>3日目</p></div>
+                <div><img src="../media/ev/c04.jpg"><p>4日目</p></div>
+                <div><img src="../media/ev/c05.jpg"><p>5日目</p></div>
+                <div><img src="../media/ev/c06.jpg"><p>6日目</p></div>
+                <div><img src="../media/ev/c07.jpg"><p>ラストラン</p></div>
+                <div class="winning-img"><img src="../media/ev/c00.jpg"></div>
+            </div>
+            <button class="contents-title" id="title-banner">プレミアムビール(第3位)<br>2023/4/25～5/1</button>
+            <div class="contents-wrapper" style="display:none">
+                <div class="winning-img"><img src="../media/ev/x03.jpg"></div>
+            </div>
+            <button class="contents-title" id="title-illustgift">新宿YUNIKAVISION(第1位)<br>2023/5/9～5/15</button>
+            <div class="contents-wrapper" style="display:none">
+                <div><img src="../media/ev/d01.jpg"><p>1日目</p></div>
+                <div><img src="../media/ev/d02.jpg"><p>2日目</p></div>
+                <div><img src="../media/ev/d03.jpg"><p>3日目</p></div>
+                <div><img src="../media/ev/d04.jpg"><p>4日目</p></div>
+                <div><img src="../media/ev/d05.jpg"><p>5日目</p></div>
+                <div><img src="../media/ev/d06.jpg"><p>6日目</p></div>
+                <div><img src="../media/ev/d07.jpg"><p>ラストラン</p></div>
+                <div class="winning-img"><img src="../media/ev/d00.jpg"></div>
+            </div>
+            <button class="contents-title" id="title-illustgift">IRIAMU×Scently(第3位)<br>2023/5/23～5/29</button>
+            <div class="contents-wrapper" style="display:none">
+                <div><img src="../media/ev/e01.jpg"><p>1日目</p></div>
+                <div><img src="../media/ev/e02.jpg"><p>2日目</p></div>
+                <div><img src="../media/ev/e03.jpg"><p>3日目</p></div>
+                <div><img src="../media/ev/e04.jpg"><p>4日目</p></div>
+                <div><img src="../media/ev/e05.jpg"><p>5日目</p></div>
+                <div><img src="../media/ev/e06.jpg"><p>6日目</p></div>
+                <div><img src="../media/ev/e07.jpg"><p>ラストラン</p></div>
+                <div class="winning-img"><img src="../media/ev/e00.jpg"></div>
+            </div>
+            <button class="contents-title" id="title-illustgift">illustration by 雨傘ゆん(第1位)<br>2023/7/11～7/17</button>
+            <div class="contents-wrapper" style="display:none">
+                <div><img src="../media/ev/f01.jpg"><p>1日目</p></div>
+                <div><img src="../media/ev/f02.jpg"><p>2日目</p></div>
+                <div><img src="../media/ev/f03.jpg"><p>3日目</p></div>
+                <div><img src="../media/ev/f04.jpg"><p>4日目</p></div>
+                <div><img src="../media/ev/f05.jpg"><p>5日目</p></div>
+                <div><img src="../media/ev/f06.jpg"><p>6日目</p></div>
+                <div><img src="../media/ev/f07.jpg"><p>ラストラン</p></div>
+                <div class="winning-img"><img src="../media/ev/f00.jpg"></div>
+            </div>
+            <button class="contents-title" id="title-illustgift">オリジナルプチギフト(第1位)<br>2023/9/12～9/18</button>
+            <div class="contents-wrapper" style="display:none">
+                <div><img src="../media/ev/g01.jpg"><p>1日目</p></div>
+                <div><img src="../media/ev/g02.jpg"><p>2日目</p></div>
+                <div><img src="../media/ev/g03.jpg"><p>3日目</p></div>
+                <div><img src="../media/ev/g04.jpg"><p>4日目</p></div>
+                <div><img src="../media/ev/g05.jpg"><p>5日目</p></div>
+                <div><img src="../media/ev/g06.jpg"><p>6日目</p></div>
+                <div><img src="../media/ev/g07.jpg"><p>ラストラン</p></div>
+                <div class="winning-img"><img src="../media/ev/g00.jpg"></div>
+            </div>
+            <button class="contents-title" id="title-banner">IRIAM 5TH ANNIVERSARY(第6位)<br>2023/10/3～10/9</button>
+            <div class="contents-wrapper" style="display:none">
+                <div class="winning-img"><img src="../media/ev/x04.jpg"></div>
+            </div>
+            <button class="contents-title" id="title-banner">背景フェスタ 和モダン文様(第3位)<br>2023/10/24～10/30</button>
+            <div class="contents-wrapper" style="display:none">
+                <div class="winning-img"><img src="../media/ev/x05.jpg"></div>
+            </div>
+            <button class="contents-title" id="title-illustgift">IRIAM×コンプティーク(第1位)<br>2023/11/7～11/13</button>
+            <div class="contents-wrapper" style="display:none">
+                <div><img src="../media/ev/h01.jpg"><p>1日目</p></div>
+                <div><img src="../media/ev/h02.jpg"><p>2日目</p></div>
+                <div><img src="../media/ev/h03.jpg"><p>3日目</p></div>
+                <div><img src="../media/ev/h04.jpg"><p>4日目</p></div>
+                <div><img src="../media/ev/h05.jpg"><p>5日目</p></div>
+                <div><img src="../media/ev/h06.jpg"><p>6日目</p></div>
+                <div><img src="../media/ev/h07.jpg"><p>ラストラン</p></div>
+                <div class="winning-img"><img src="../media/ev/h00.jpg"></div>
+            </div>
+            <button class="contents-title" id="title-banner">しらぬいを手に入れよう！鏡餅しらす編(第2位)<br>2024/1/2～1/8</button>
+            <div class="contents-wrapper" style="display:none">
+                <div class="winning-img"><img src="../media/ev/x06.jpg"></div>
             </div>
         </div>
         <div class="top-btn"><a href="#top"><p><i class="fa-solid fa-arrow-up"></i></p></a></div>
+        <script src="../js/event-slide.js"></script>
     </body>
 </html>
