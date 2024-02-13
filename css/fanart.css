@@ -123,3 +123,42 @@ body{
     }    
 }
 
+/* 追加_流れるテキスト */
+    .c-text {
+        overflow: hidden;
+        display: flex;
+        width: 100vw;
+        margin-inline: calc(50% - 50vw);
+    }
+
+    .c-text__item {
+        flex-shrink: 0;
+        white-space: nowrap;
+        font-size: 30px;
+    
+        &:nth-child(odd) {
+            animation: MoveLeft var(--tick-duration, 24s) var(--tick-delay, -12s) infinite linear;
+        }
+
+        &:nth-child(even) {
+            animation: MoveLeft2 var(--tick-duration, 24s) infinite linear;
+        }
+    }
+
+    @keyframes MoveLeft {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes MoveLeft2 {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-200%);
+        }
+    }
