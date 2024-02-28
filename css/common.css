@@ -68,3 +68,8 @@ img{
         font-size: 2vw;
     }
 }
+
+/* カーソルの変更 */
+.custom-cursor {
+    cursor: url('../media/common/cursol.png'), auto;
+}
